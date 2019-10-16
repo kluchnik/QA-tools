@@ -43,7 +43,7 @@ echo "enable script-server"
 systemctl enable script-server.service
 
 echo "cp example"
-cp -r $SCRIPT_DIR/example/log $HOME_DIR$NAME/conf/ -v
-cp -r $SCRIPT_DIR/example/runners $HOME_DIR$NAME/conf/ -v
-cp -r $SCRIPT_DIR/example/screenshot $HOME_DIR$NAME/conf/ -v
-cp -r $SCRIPT_DIR/example/scripts $HOME_DIR$NAME/conf/ -v
+cp -r $SCRIPT_DIR/example/* $HOME_DIR$NAME/conf/ -v
+
+echo "chmod example"
+chmod -R 777 $HOME_DIR$NAME/conf/
