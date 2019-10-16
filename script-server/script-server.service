@@ -1,0 +1,14 @@
+[Unit]
+Description=script-server
+
+[Service]
+Type=forking
+
+User=root
+ExecStart=/etc/init.d/script-server start
+ExecStop=/etc/init.d/script-server stop
+ExecReload=/etc/init.d/script-server restart
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
