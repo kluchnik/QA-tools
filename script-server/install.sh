@@ -24,6 +24,9 @@ pip3 install tornado
 SCRIPT_DIR=$(dirname $0)
 echo "dir script = $SCRIPT_DIR"
 
+echo "delete script-server.zip"
+rm $SCRIPT_DIR/script-server.zip
+
 echo "chmod scripts"
 chmod +x $SCRIPT_DIR/start.sh
 chmod 777 $SCRIPT_DIR/script-server.json
