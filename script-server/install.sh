@@ -41,9 +41,3 @@ cp $SCRIPT_DIR/script-server.service /etc/systemd/system/ -v
 
 echo "enable script-server"
 systemctl enable script-server.service
-
-echo "cp example"
-cp -r $SCRIPT_DIR/example/* $HOME_DIR$NAME/conf/ -v
-
-echo "chmod example"
-chmod -R 777 $HOME_DIR$NAME/conf/
