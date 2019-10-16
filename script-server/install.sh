@@ -18,6 +18,9 @@ apt-get install python3
 echo "install pip3"
 apt-get install python3-pip
 
+echo "install pip3 tornado"
+pip3 install tornado
+
 SCRIPT_DIR=$(dirname $0)
 echo "dir script = $SCRIPT_DIR"
 
