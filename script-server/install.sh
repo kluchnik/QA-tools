@@ -21,6 +21,12 @@ apt-get install python3-pip
 SCRIPT_DIR=$(dirname $0)
 echo "dir script = $SCRIPT_DIR"
 
+echo "chmod scripts"
+chmod +x $SCRIPT_DIR/start.sh
+chmod 777 $SCRIPT_DIR/script-server.json
+chmod +x $SCRIPT_DIR/script-server
+chmod +x $SCRIPT_DIR/script-server.service
+
 echo "cp files"
 cp $SCRIPT_DIR/start.sh $HOME_DIR$NAME -v
 cp $SCRIPT_DIR/script-server.json $HOME_DIR$NAME -v
