@@ -1,0 +1,273 @@
+{
+    "name":"web page rubicon",
+    "parameters": [
+        {
+            "name": "Система => Начало",
+            "url": "/cgi-bin/index.cgi"
+        },
+        {
+            "name": "Система => Интерфейсы",
+            "url": "/cgi-bin/sysifaces.cgi"
+        },
+        {
+            "name": "Система => Почта",
+            "url": "/cgi-bin/adminemail.cgi"
+        },
+        {
+            "name": "Система => Пользователи",
+            "url": "/cgi-bin/users.cgi"
+        },
+        {
+            "name": "Система => Соединение",
+            "url": "/cgi-bin/connect.cgi"
+        },
+        {
+            "name": "Система => Пароли",
+            "url": "/cgi-bin/changepw.cgi"
+        },
+        {
+            "name": "Система => Настройка GUI",
+            "url": "/cgi-bin/gui.cgi"
+        },
+        {
+            "name": "Система => Резервное копирование",
+            "url": "/cgi-bin/backup.cgi"
+        },
+        {
+            "name": "Система => Пакеты",
+            "url": "/cgi-bin/packages.cgi"
+        },
+        {
+            "name": "Система => Настройка меню",
+            "url": "/cgi-bin/configmenu.cgi"
+        },
+        {
+            "name": "Система => Автоматическое восстановление",
+            "url": "/cgi-bin/restore.cgi"
+        },
+        {
+            "name": "Система => Выключение",
+            "url": "/cgi-bin/shutdown.cgi"
+        },
+        {
+            "name": "Система => О программе",
+            "url": "/cgi-bin/about.cgi"
+        },
+        {
+            "name": "Состояние => Состояние системы",
+            "url": "/cgi-bin/status.cgi"
+        },
+        {
+            "name": "Состояние => Информация о системе",
+            "url": "/cgi-bin/sysinfo.cgi"
+        },
+        {
+            "name": "Состояние => Состояние сети",
+            "url": "/cgi-bin/netstatus.cgi"
+        },
+        {
+            "name": "Состояние => Подсчет трафика",
+            "url": "/cgi-bin/traffic.cgi"
+        },
+        {
+            "name": "Состояние => Подсчет трафика => Конфигурация",
+            "url": "/cgi-bin/trafficadm.cgi"
+        },
+        {
+            "name": "Состояние => Соединения",
+            "url": "/cgi-bin/connections.cgi"
+        },
+        {
+            "name": "Состояние => Состяние интерфейсов",
+            "url": "/cgi-bin/netmonitor.cgi"
+        },
+        {
+            "name": "Состояние => Настройки IP Tables",
+            "url": "/cgi-bin/iptablesgui.cgi"
+        },
+        {
+            "name": "Состояние => Контрольные суммы",
+            "url": "/cgi-bin/checksum.cgi"
+        },
+        {
+            "name": "Сеть => Псевдонимы",
+            "url": "/cgi-bin/aliases.cgi"
+        },
+        {
+            "name": "Сеть => Горячее резервирование",
+            "url": "/cgi-bin/redundancy.cgi"
+        },
+        {
+            "name": "Сеть => Однонаправленный шлюз",
+            "url": "/cgi-bin/diode.cgi"
+        },
+        {
+            "name": "Сеть => Настройка адаптеров",
+            "url": "/cgi-bin/ethconfig.cgi"
+        },
+        {
+            "name": "Сеть => Маршруты",
+            "url": "/cgi-bin/routeconfig.cgi"
+        },
+        {
+            "name": "Сеть => Конфигурация ARP",
+            "url": "/cgi-bin/arpconfig.cgi"
+        },
+        {
+            "name": "Сеть => OSPF",
+            "url": "/cgi-bin/ospfadm.cgi"
+        },
+        {
+            "name": "Сеть => OSPF => Интерфейсы",
+            "url": "/cgi-bin/ospfifaces.cgi"
+        },
+        {
+            "name": "Сеть => BGP",
+            "url": "/cgi-bin/bgpadm.cgi"
+        },
+        {
+            "name": "Сеть => VLANs",
+            "url": "/cgi-bin/vlanadm.cgi"
+        },
+        {
+            "name": "Сеть => VLANs => Добавить",
+            "url": "/cgi-bin/vlan.cgi"
+        },
+        {
+            "name": "Сеть => Объединение интерфейсов",
+            "url": "/cgi-bin/bonding.cgi"
+        },
+        {
+            "name": "Службы => Прокси",
+            "url": "/cgi-bin/proxy.cgi"
+        },
+        {
+            "name": "Службы => FTP посредник",
+            "url": "/cgi-bin/ftpproxy.cgi"
+        },
+        {
+            "name": "Службы => Сервер DHCP",
+            "url": "/cgi-bin/dhcp.cgi"
+        },
+        {
+            "name": "Службы => Динамический DNS",
+            "url": "/cgi-bin/ddns.cgi"
+        },
+        {
+            "name": "Службы => Изменить хосты",
+            "url": "/cgi-bin/hosts.cgi"
+        },
+        {
+            "name": "Службы => Сервер времени",
+            "url": "/cgi-bin/time.cgi"
+        },
+        {
+            "name": "Службы => Ограничение трафика",
+            "url": "/cgi-bin/shaping.cgi"
+        },
+        {
+            "name": "Службы => Проверка доступности узлов",
+            "url": "/cgi-bin/ping.cgi"
+        },
+        {
+            "name": "СОВ => Настройка правил",
+            "url": "/cgi-bin/idsadm.cgi"
+        },
+        {
+            "name": "СОВ => Настройка правил => Добавить",
+            "url": "/cgi-bin/idseditrule.cgi"
+        },
+        {
+            "name": "СОВ => Настройка обнаружения",
+            "url": "/cgi-bin/portscan.cgi"
+        },
+        {
+            "name": "СОВ => Обнаружение Атак",
+            "url": "/cgi-bin/ids.cgi"
+        },
+        {
+            "name": "Межстевой экран => Настройки МЭ",
+            "url": "/cgi-bin/fwrulesadm.cgi"
+        },
+        {
+            "name": "Межстевой экран => Доступ к синему интерфейсу",
+            "url": "/cgi-bin/wireless.cgi"
+        },
+        {
+            "name": "Межстевой экран => Службы",
+            "url": "/cgi-bin/services.cgi"
+        },
+        {
+            "name": "Межстевой экран => Группы служб",
+            "url": "/cgi-bin/servicegrps.cgi"
+        },
+        {
+            "name": "Межстевой экран => Адреса",
+            "url": "/cgi-bin/addresses.cgi"
+        },
+        {
+            "name": "Межстевой экран => Группы адресов",
+            "url": "/cgi-bin/addressgrps.cgi"
+        },
+        {
+            "name": "Межстевой экран => Интерфейсы",
+            "url": "/cgi-bin/ifaces.cgi"
+        },
+        {
+            "name": "Межстевой экран => Группы состояний",
+            "url": "/cgi-bin/stateconfig.cgi"
+        },
+        {
+            "name": "Межстевой экран => Правила МЭ",
+            "url": "/cgi-bin/fwrules.cgi"
+        },
+        {
+            "name": "Межстевой экран => Конфигурация DMZ",
+            "url": "/cgi-bin/dmzholes.cgi"
+        },
+        {
+            "name": "VPN => Настройка IPSec",
+            "url": "/cgi-bin/ipsec.cgi"
+        },
+        {
+            "name": "VPN => Настройка VPN",
+            "url": "/cgi-bin/vpns.cgi"
+        },
+        {
+            "name": "VPN => Настройка VPN => Создать VPN-сервер",
+            "url": "/cgi-bin/ovpnmain.cgi"
+        },
+        {
+            "name": "VPN => Настройка VPN => Создать VPN-клиент",
+            "url": "/cgi-bin/cvpnmain.cgi"
+        },
+        {
+            "name": "VPN => GRE",
+            "url": "/cgi-bin/greadm.cgi"
+        },
+        {
+            "name": "VPN => Выпуск сертификатов",
+            "url": "/cgi-bin/ca.cgi"
+        },
+        {
+            "name": "Журналы => Настройки журналирования",
+            "url": "/cgi-bin/logs.cgi/config.dat"
+        },
+        {
+            "name": "Журналы => Сводка журнала",
+            "url": "/cgi-bin/logs.cgi/summary.dat"
+        },
+        {
+            "name": "Журналы => Журнал МЭ",
+            "url": "/cgi-bin/logs.cgi/firewalllog.dat"
+        },
+        {
+            "name": "Журналы => Журнал СОВ",
+            "url": "/cgi-bin/logs.cgi/idslog.dat"
+        },
+        {
+            "name": "Журналы => Системный протокол",
+            "url": "/cgi-bin/logs.cgi/loglog.dat"
+        }
+    ]
+}

@@ -1,0 +1,994 @@
+<html lang="en" class=" js no-touch cssanimations" style=""><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+	
+
+  <title>
+Рубикон-К: Интерфейсы  </title>
+
+
+  <link rel="stylesheet" href="/i/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/i/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/i/bower_components/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/i/bower_components/metisMenu/dist/metisMenu.min.css">
+  <link rel="stylesheet" href="/i/bower_components/Waves/dist/waves.min.css">
+  <link rel="stylesheet" href="/i/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+
+  <link rel="stylesheet" href="/i/js/selects/cs-select.css">
+  <link rel="stylesheet" href="/i/js/selects/cs-skin-elastic.css">
+
+  <link rel="stylesheet" href="/i/bower_components/c3/c3.min.css">
+  <link rel="stylesheet" href="/i/bower_components/zabuto_calendar/zabuto_calendar.min.css">
+    <script src="/i/js/menu/modernizr.custom.js"></script>
+
+  <link rel="stylesheet" href="/i/css/style.css">
+  <link rel="stylesheet" href="/i/css/rubicon.css">
+  <link rel="stylesheet" href="/i/css/icons.css">  
+
+  <link rel="icon" href="/i/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/i/img/favicon.ico" type="image/x-icon">
+  <!--[if lt IE 9]>
+      <script src="/i/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+      <script src="/i/bower_components/respondJs/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body style="overflow: hidden;">
+  <!--Preloader-->
+  <div id="preloader" class="preloader table-wrapper" style="display: none;">
+    <div class="table-row">
+      <div class="table-cell">
+        <div class="la-ball-scale-multiple la-3x">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-wrapper" class="main-wrapper">
+
+    <ul id="gn-menu" class="navbar gn-menu-main">
+      <li class="gn-trigger">
+        <a id="menu-toggle" class="menu-toggle gn-icon gn-icon-menu">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="cross">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+<!--        <nav class="gn-menu-wrapper">
+          <div class="gn-scroller">
+            <ul class="gn-menu metismenu">
+              <li class="gn-search-item">
+                <input placeholder="Search" type="search" class="gn-search">
+                <a class="search-icon"><i class="fa fa-search"></i><span>Search</span></a>
+              </li>
+              <li class="active">
+                <a href="/i/index.html" aria-expanded="true"><i class="fa fa-th"></i>Dashboards<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="true">
+                  <li><a class="active" href="/i/index.html">Dashboard v1</a></li>
+                  <li><a href="/i/dashboard_2.html">Dashboard v2</a></li>
+                  <li><a href="/i/dashboard_3.html">Dashboard v3</a></li>
+                </ul>
+              </li>
+
+
+              <li>
+                <a href="/i/calendar.html"><i class="fa fa-calendar-o"></i>Calendar<span class="label label-warning pull-right">9</span></a>
+              </li>
+
+              <li>
+                <a href="/i/mailbox.html" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>Email
+                  <span class="fa arrow"></span>
+                </a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/mailbox.html">Mailbox</a></li>
+                  <li><a href="/i/email-inbox.html">Inbox</a></li>
+                  <li><a href="/i/email-compose.html">Email Compose</a></li>
+                  <li><a href="/i/email-view.html">Email View</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/widgets.html">
+                  <i class="fa fa-th-list"></i>Widgets
+                  <span class="label label-danger pull-right">16</span>
+                </a>
+              </li>
+              <li>
+                <a href="/i/typography.html">
+                  <i class="fa fa-font"></i>Typography
+                </a>
+              </li>
+              <li>
+                <a href="/i/grids.html">
+                  <i class="fa fa-desktop"></i>Grid System
+                </a>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-table"></i>Tables<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/tables.html">Tables</a></li>
+                  <li><a href="/i/datatables.html">Data Tables</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-briefcase"></i>UI Kits<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/colors.html">Colors</a></li>
+                  <li><a href="/i/animations.html">Animations</a></li>
+                  <li><a href="/i/icons.html">Icons</a></li>
+                  <li><a href="/i/form-elements.html">Forms</a></li>
+                  <li><a href="/i/sliders.html">Sliders</a></li>
+                  <li><a href="/i/buttons.html">Buttons</a></li>
+                  <li><a href="/i/breadcrumbs.html">Breadcrumbs</a></li>
+                  <li><a href="/i/nav-buttons.html">Nav buttons</a></li>
+                  <li><a href="/i/notifications.html">Notifications</a></li>
+                  <li><a href="/i/panels.html">Panels</a></li>
+                  <li><a href="/i/tabs.html">Tabs</a></li>
+                  <li><a href="/i/media.html">Media</a></li>
+                  <li><a href="/i/components.html">Other components</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-edit"></i>Charts<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/flotjs.html">Flot.js</a></li>
+                  <li><a href="/i/chartjs.html">Chart.js</a></li>
+                  <li><a href="/i/morrisjs.html">Morris.js</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-file"></i>Other pages<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/todo_list.html">Todo list</a></li>
+                  <li><a href="/i/timeline.html">Timeline</a></li>
+                  <li><a href="/i/contacts.html">Contacts</a></li>
+                  <li><a href="/i/profile.html">Profile</a></li>
+                  <li><a href="/i/chat.html">Chat</a></li>
+                  <li><a href="/i/projects.html">Projects</a></li>
+                  <li><a href="/i/wizard.html">Wizard</a></li>
+                  <li><a href="/i/login.html">Login</a></li>
+                  <li><a href="/i/registration.html">Registration</a></li>
+                  <li><a href="/i/404.html">404</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> -->
+          <!-- /gn-scroller -->
+<!--          <div class="bottom-bnts">
+            <a class="profile" href="/i/#"><i class="mdi mdi-account"></i></a>
+            <a class="fix-nav" href="/i/#"><i class="mdi mdi-pin"></i></a>
+            <a class="logout" href="/i/#"><i class="mdi mdi-power"></i></a>
+          </div>
+        </nav> -->
+        <nav class="gn-menu-wrapper">
+          <div class="gn-scroller">
+            <ul class="gn-menu metismenu">
+              <!--<li class="gn-search-item">
+                <input placeholder="Search" type="search" class="gn-search">
+                <a class="search-icon"><i class="fa fa-search"></i><span>Search</span></a>
+              </li>-->
+<li>
+<a href="" aria-expanded="true"><i class="rub-system"></i>Система<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/index.cgi">Начало</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/sysifaces.cgi">Интерфейсы</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/adminemail.cgi">Почта</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/users.cgi">Пользователи</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/connect.cgi">Соединение</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/changepw.cgi">Пароли</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/gui.cgi">Настройки GUI</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/backup.cgi">Резервное копирование</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/packages.cgi">Пакеты</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/configmenu.cgi">Настройка меню</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/restore.cgi">Автоматическое восстановление</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/shutdown.cgi">Выключение</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/about.cgi">О программе</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-status"></i>Состояние<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/status.cgi">Состояние системы</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/sysinfo.cgi">Информация о системе</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/netstatus.cgi">Состояние сети</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/traffic.cgi">Подсчёт трафика</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/connections.cgi">Соединения</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/netmonitor.cgi">Состояние интерфейсов</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/iptablesgui.cgi">Настройки IPTables</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/checksum.cgi">Контрольные суммы</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-netowrk"></i>Сеть<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/aliases.cgi">Псевдонимы</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/redundancy.cgi">Функция горячего резервирования</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ethconfig.cgi">Настройка адаптеров</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/routeconfig.cgi">Маршруты</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ospfadm.cgi">OSPF</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/bgpadm.cgi">BGP</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/vlanadm.cgi">VLANs</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/bonding.cgi">Объединение интерфейсов</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-services"></i>Службы<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/proxy.cgi">Прокси</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ftpproxy.cgi">FTP посредник</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/dhcp.cgi">Сервер DHCP</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ddns.cgi">Динамический DNS</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/hosts.cgi">Изменить хосты</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/time.cgi">Сервер времени</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/shaping.cgi">Ограничение Трафика</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ping.cgi">Проверка доступности узлов</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-ids"></i>Система Обнаружения Вторжений<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/idsadm.cgi">Настройка правил СОВ</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/portscan.cgi">Настройка обнаружения сканирования</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ids.cgi">Обнаружение Атак</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-firewall"></i>Межсетевой Экран<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/fwrulesadm.cgi">Настройки межсетевого экрана</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/wireless.cgi">Доступ к Синему интерфейсу</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/services.cgi">Службы</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/servicegrps.cgi">Группы служб</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/addresses.cgi">Адреса</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/addressgrps.cgi">Группы адресов</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/ifaces.cgi">Интерфейсы</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/stateconfig.cgi">Группы состояний</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/fwrules.cgi">Правила межсетевого экрана</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-vpn"></i>VPN<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/vpns.cgi">Настройка VPN</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/greadm.cgi">GRE</a></li></ul>
+</li><li>
+<a href="" aria-expanded="true"><i class="rub-logs"></i>Журналы<span class="fa arrow"></span></a><ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/logs.cgi/config.dat">Настройки журналирования</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/logs.cgi/summary.dat">Сводка журнала</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/logs.cgi/firewalllog.dat">Журнал межсетевого экрана</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/logs.cgi/idslog.dat">Журнал обнаружения атак</a></li></ul>
+<ul class="gn-submenu collapse" aria-expanded="false"><li><a class="active" href="/cgi-bin/logs.cgi/loglog.dat">Системный протокол</a></li></ul>
+</li>
+<!--
+              <li>
+                <a href="/i/calendar.html"><i class="fa fa-calendar-o"></i>Calendar<span class="label label-warning pull-right">9</span></a>
+              </li>
+
+              <li>
+                <a href="/i/mailbox.html" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>Email
+                  <span class="fa arrow"></span>
+                </a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/mailbox.html">Mailbox</a></li>
+                  <li><a href="/i/email-inbox.html">Inbox</a></li>
+                  <li><a href="/i/email-compose.html">Email Compose</a></li>
+                  <li><a href="/i/email-view.html">Email View</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/widgets.html">
+                  <i class="fa fa-th-list"></i>Widgets
+                  <span class="label label-danger pull-right">16</span>
+                </a>
+              </li>
+              <li>
+                <a href="/i/typography.html">
+                  <i class="fa fa-font"></i>Typography
+                </a>
+              </li>
+              <li>
+                <a href="/i/grids.html">
+                  <i class="fa fa-desktop"></i>Grid System
+                </a>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-table"></i>Tables<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/tables.html">Tables</a></li>
+                  <li><a href="/i/datatables.html">Data Tables</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-briefcase"></i>UI Kits<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/colors.html">Colors</a></li>
+                  <li><a href="/i/animations.html">Animations</a></li>
+                  <li><a href="/i/icons.html">Icons</a></li>
+                  <li><a href="/i/form-elements.html">Forms</a></li>
+                  <li><a href="/i/sliders.html">Sliders</a></li>
+                  <li><a href="/i/buttons.html">Buttons</a></li>
+                  <li><a href="/i/breadcrumbs.html">Breadcrumbs</a></li>
+                  <li><a href="/i/nav-buttons.html">Nav buttons</a></li>
+                  <li><a href="/i/notifications.html">Notifications</a></li>
+                  <li><a href="/i/panels.html">Panels</a></li>
+                  <li><a href="/i/tabs.html">Tabs</a></li>
+                  <li><a href="/i/media.html">Media</a></li>
+                  <li><a href="/i/components.html">Other components</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-edit"></i>Charts<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/flotjs.html">Flot.js</a></li>
+                  <li><a href="/i/chartjs.html">Chart.js</a></li>
+                  <li><a href="/i/morrisjs.html">Morris.js</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/i/#" aria-expanded="false"><i class="fa fa-file"></i>Other pages<span class="fa arrow"></span></a>
+                <ul class="gn-submenu collapse" aria-expanded="false">
+                  <li><a href="/i/todo_list.html">Todo list</a></li>
+                  <li><a href="/i/timeline.html">Timeline</a></li>
+                  <li><a href="/i/contacts.html">Contacts</a></li>
+                  <li><a href="/i/profile.html">Profile</a></li>
+                  <li><a href="/i/chat.html">Chat</a></li>
+                  <li><a href="/i/projects.html">Projects</a></li>
+                  <li><a href="/i/wizard.html">Wizard</a></li>
+                  <li><a href="/i/login.html">Login</a></li>
+                  <li><a href="/i/registration.html">Registration</a></li>
+                  <li><a href="/i/404.html">404</a></li>
+                </ul>
+              </li>-->
+            </ul>
+          </div>
+          <!-- /gn-scroller -->
+          <div class="bottom-bnts">
+<!--            <a class="profile" href="/cgi-bin/users.cgi"><i class="mdi mdi-account"></i></a> -->
+            <a class="fix-nav" href="/i/#"><i class="mdi mdi-pin"></i></a>
+            <a class="logout" href="/cgi-bin/logout.cgi"><i class="mdi mdi-logout"></i></a>
+            <!--<a class="logout" href="/cgi-bin/shutdown.cgi"><i class="mdi mdi-power"></i></a>-->
+          </div>
+        </nav>
+<script type="text/javascript">
+	function closebellmessage(index) {
+		var xhr1=new XMLHttpRequest();
+		var body = 'NUM='+index;
+		xhr1.open("GET", "/cgi-bin/scripts/closebellmessage.cgi?NUM="+index,true);
+		xhr1.onreadystatechange = function() {
+			if (xhr1.readyState != 4) return;
+		}
+		xhr1.send();
+	}
+	function clearAllNotifications() {
+		var xhr1=new XMLHttpRequest();
+		xhr1.open("GET", "/cgi-bin/scripts/clearallnotifications.cgi",true);
+		xhr1.onreadystatechange = function() {
+			if (xhr1.readyState != 4) return;
+		}
+		xhr1.send();
+	}
+</script>
+<script>
+//	var auto_refresh = setTimeout('loadMsg()', 6000);
+	function loadMsg() {
+		var xhr1=new XMLHttpRequest();
+		xhr1.open("GET", "/cgi-bin/scripts/loadmessage.cgi", false);
+		xhr1.onreadystatechange = function() {
+			if (xhr1.readyState != 4) return;
+			document.getElementById("bellmessage").innerHTML=xhr1.responseText;
+		}
+		xhr1.send();
+//		setTimeout(arguments.callee, 6000);
+	}
+					</script>
+	<script>
+		var auto_refresh = setTimeout('getbellnumber()', 6000);
+		function getbellnumber() {
+			var xhr1=new XMLHttpRequest();
+			xhr1.open("GET", "/cgi-bin/scripts/getbellnumber.cgi", false);
+			xhr1.onreadystatechange = function() {
+				if (xhr1.readyState != 4) return;
+				document.getElementById("bellnumber").innerHTML=xhr1.responseText;
+			}
+		xhr1.send();
+		setTimeout(arguments.callee, 6000);
+		}
+	</script>
+      </li>
+      <li>
+        <a href="/cgi-bin/index.cgi" class="logo text-uppercase">
+Рубикон-К        <!--<i class="fa fa-toggle-on"></i>--></a>
+<!--      </li>
+      <li class="top-clock">
+        <span class="current-time"></span>
+      </li>
+-->
+      </li><li class="container-fluid pull-right">
+        <ul class="nav navbar-right right-menu">
+          <!--<li class="members-btn">
+            <a class="show-members">
+              <i class="fa fa-group"></i>
+            </a>
+          </li>-->
+<!--          <li class="lang">
+            <select class="cs-select cs-skin-elastic">
+              <option value="english" data-class="flag-england cs-selected" selected>English</option>
+              <option value="german" data-class="flag-germany">German</option>
+              <option value="french" data-class="flag-france">French</option>
+            </select>
+          </li>
+-->
+          <li class="dropdown notifications">
+            <a class="dropdown-toggle" data-toggle="dropdown" onclick="loadMsg()">
+              <i class="fa fa-bell-o"></i> <span id="bellnumber" class="label label-warning"></span>
+            </a>
+		            <ul class="dropdown-menu scrollable-menu" id="bellmessage" style="overflow-y:auto;height:70vh;"> 
+            		</ul>
+          </li>
+          <li class="dropdown some-btn">
+            <a class="fullscreen">
+              <i class="mdi mdi-fullscreen"></i>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+<div id="content" class="content container-fluid" style="min-height: 913px;">
+<table width="100%" border="0">
+<tbody><tr>
+<td valign="top" align="center"><table width="100%" cellspacing="0" cellpadding="10" border="0">
+<tbody><tr><td align="left" valign="top">
+	<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	    <colgroup><col width="18">
+	    <col width="12">
+	    <col width="100%">
+	    <col width="145">
+	    <col width="18">
+
+ 	    </colgroup><tbody><tr><td width="18"><img src="/images/null.gif" width="18" height="1" alt=""></td>
+		<td width="12"><img src="/images/null.gif" width="12" height="1" alt=""></td>
+		<td width="100%"><img src="/images/null.gif" width="257" height="1" alt=""></td>
+		<td width="145"><img src="/images/null.gif" width="145" height="1" alt=""></td>
+		<td width="18"><img src="/images/null.gif" width="18" height="1" alt=""></td></tr>
+
+	    <tr><td colspan="2">
+<!-- <img src='/images/boxtop1.png' width='30' height='53' alt='' /> -->
+		</td>
+		<td>
+<b>Интерфейсы</b>
+		</td>
+		<td colspan="2">
+<!-- <img src='/images/boxtop3.png' width='163' height='53' alt='' /> -->
+		</td></tr></tbody></table>
+		<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	    <tbody><tr><td>
+<!-- <img src='/images/null.gif' width='18' height='1' alt='' /> -->
+		</td>
+		<td colspan="3" style="background-color: #fefefe;" width="100%">
+		<table width="100%" cellpadding="5"><tbody><tr><td align="left" valign="top">
+<!--?xml version="1.0"?-->
+<root>
+	<table>
+		</table><table><tbody><tr xmlns:foo="urn:foo" bgcolor="" color=""><td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:;">Зеленый интерфейс</div></font><div style="color:;"><font color=""></font></div></td></tr></tbody></table><root>
+	<interface>
+	<div xmlns:foo="urn:foo" class="panel panel-default"><table width="70%" cellspacing="1" cellpadding="5">
+		<tbody><tr bgcolor="" color="">
+			<form name="" action="" method="POST" enctype=""></form>
+			<td bgcolor="" width="25%"><font color="">
+				</font><div align="center"><font color=""><div style="font-weight:bold;color:GREEN;">1</div><div style="color:;"></div>
+			</font></div></td>
+			<td bgcolor="" width="45%"><font color="">
+				<table width="100%">
+					<tbody><tr bgcolor="" color="">
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:;">Интерфейс</div></font><div style="color:;"><font color=""></font></div></td>
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:GREEN;">lan-1</div></font><div style="color:;"><font color=""></font></div></td>
+					</tr>
+					<tr bgcolor="" color="">
+						<td><input type="hidden" name="COLOR" value="GREEN"></td>
+					</tr><tr bgcolor="" color="">
+						<td><input type="hidden" name="NUMBER" value="1"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Адрес</td><td><input type="text" class="form-control" name="ADDRESS" value="192.168.1.10" title="XXX.XXX.XXX.XXX"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Маска сети</td><td><input type="text" class="form-control" name="NETMASK" value="255.255.255.0" title="YYY.YYY.YYY.YYY"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MAC</td><td><input type="text" class="form-control" name="MAC" value="08:00:27:13:6e:71" title="ZZ:ZZ:ZZ:ZZ:ZZ:ZZ"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MTU</td><td><input type="text" class="form-control" name="MTU" value="1500" title="1500"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">трансляция ARP</td><td><input type="checkbox" name="ARP_PROXY"><input type="hidden" name="ARP_PROXY" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">неразборчивый режим</td><td><input type="checkbox" name="PROMISC"><input type="hidden" name="PROMISC" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">отключено</td><td><input type="checkbox" name="DISABLE"><input type="hidden" name="DISABLE" value="off"></td>
+					</tr>
+				</tbody></table>
+			</font></td>
+			<td bgcolor="" width=""><font color="">
+					<button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="ACTION" value="Сохранить">Сохранить</button>
+			</font></td>
+			
+		</tr>
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+	</interface>
+</root><root>
+	<interface>
+	<div xmlns:foo="urn:foo" class="panel panel-default"><table width="70%" cellspacing="1" cellpadding="5">
+		<tbody><tr bgcolor="" color="">
+			<form name="" action="" method="POST" enctype=""></form>
+			<td bgcolor="" width="25%"><font color="">
+				</font><div align="center"><font color=""><div style="font-weight:bold;color:GREEN;">2</div><div style="color:;"></div>
+			</font></div></td>
+			<td bgcolor="" width="45%"><font color="">
+				<table width="100%">
+					<tbody><tr bgcolor="" color="">
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:;">Интерфейс</div></font><div style="color:;"><font color=""></font></div></td>
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:GREEN;">lan-2</div></font><div style="color:;"><font color=""></font></div></td>
+					</tr>
+					<tr bgcolor="" color="">
+						<td><input type="hidden" name="COLOR" value="GREEN"></td>
+					</tr><tr bgcolor="" color="">
+						<td><input type="hidden" name="NUMBER" value="2"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Адрес</td><td><input type="text" class="form-control" name="ADDRESS" value="192.168.2.1" title="XXX.XXX.XXX.XXX"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Маска сети</td><td><input type="text" class="form-control" name="NETMASK" value="255.255.255.0" title="YYY.YYY.YYY.YYY"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MAC</td><td><input type="text" class="form-control" name="MAC" value="08:00:27:13:6e:72" title="ZZ:ZZ:ZZ:ZZ:ZZ:ZZ"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MTU</td><td><input type="text" class="form-control" name="MTU" value="1500" title="1500"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">трансляция ARP</td><td><input type="checkbox" name="ARP_PROXY"><input type="hidden" name="ARP_PROXY" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">неразборчивый режим</td><td><input type="checkbox" name="PROMISC"><input type="hidden" name="PROMISC" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">отключено</td><td><input type="checkbox" name="DISABLE"><input type="hidden" name="DISABLE" value="off"></td>
+					</tr>
+				</tbody></table>
+			</font></td>
+			<td bgcolor="" width=""><font color="">
+					<button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="ACTION" value="Сохранить">Сохранить</button>
+			</font></td>
+			
+		</tr>
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+	</interface>
+</root><root>
+	<interface>
+	<div xmlns:foo="urn:foo" class="panel panel-default"><table width="70%" cellspacing="1" cellpadding="5">
+		<tbody><tr bgcolor="" color="">
+			<form name="" action="" method="POST" enctype=""></form>
+			<td bgcolor="" width="25%"><font color="">
+				</font><div align="center"><font color=""><div style="font-weight:bold;color:GREEN;">3</div><div style="color:;"></div>
+			</font></div></td>
+			<td bgcolor="" width="45%"><font color="">
+				<table width="100%">
+					<tbody><tr bgcolor="" color="">
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:;">Интерфейс</div></font><div style="color:;"><font color=""></font></div></td>
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:GREEN;">lan-3</div></font><div style="color:;"><font color=""></font></div></td>
+					</tr>
+					<tr bgcolor="" color="">
+						<td><input type="hidden" name="COLOR" value="GREEN"></td>
+					</tr><tr bgcolor="" color="">
+						<td><input type="hidden" name="NUMBER" value="3"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Адрес</td><td><input type="text" class="form-control" name="ADDRESS" value="192.168.3.1" title="XXX.XXX.XXX.XXX"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Маска сети</td><td><input type="text" class="form-control" name="NETMASK" value="255.255.255.0" title="YYY.YYY.YYY.YYY"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MAC</td><td><input type="text" class="form-control" name="MAC" value="08:00:27:13:6e:73" title="ZZ:ZZ:ZZ:ZZ:ZZ:ZZ"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MTU</td><td><input type="text" class="form-control" name="MTU" value="1500" title="1500"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">трансляция ARP</td><td><input type="checkbox" name="ARP_PROXY"><input type="hidden" name="ARP_PROXY" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">неразборчивый режим</td><td><input type="checkbox" name="PROMISC"><input type="hidden" name="PROMISC" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">отключено</td><td><input type="checkbox" name="DISABLE"><input type="hidden" name="DISABLE" value="off"></td>
+					</tr>
+				</tbody></table>
+			</font></td>
+			<td bgcolor="" width=""><font color="">
+					<button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="ACTION" value="Сохранить">Сохранить</button>
+			</font></td>
+			
+		</tr>
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+	</interface>
+</root><table><tbody><tr xmlns:foo="urn:foo" bgcolor="" color=""><td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:;">Красный интерфейс</div></font><div style="color:;"><font color=""></font></div></td></tr></tbody></table><root>
+	<interface>
+	<div xmlns:foo="urn:foo" class="panel panel-default"><table width="70%" cellspacing="1" cellpadding="5">
+		<tbody><tr bgcolor="" color="">
+			<form name="" action="" method="POST" enctype=""></form>
+			<td bgcolor="" width="25%"><font color="">
+				</font><div align="center"><font color=""><div style="font-weight:bold;color:RED;">1</div><div style="color:;"></div>
+			</font></div></td>
+			<td bgcolor="" width="45%"><font color="">
+				<table width="100%">
+					<tbody><tr bgcolor="" color="">
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:;">Интерфейс</div></font><div style="color:;"><font color=""></font></div></td>
+						<td bgcolor="" width=""><font color=""><div style="font-weight:bold;color:RED;">lan-4</div></font><div style="color:;"><font color=""></font></div></td>
+					</tr>
+					<tr bgcolor="" color="">
+						<td><input type="hidden" name="COLOR" value="RED"></td>
+					</tr><tr bgcolor="" color="">
+						<td><input type="hidden" name="NUMBER" value="1"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Адрес</td><td><input type="text" class="form-control" name="ADDRESS" value="220.255.1.1" title="XXX.XXX.XXX.XXX"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">Маска сети</td><td><input type="text" class="form-control" name="NETMASK" value="255.255.255.0" title="YYY.YYY.YYY.YYY"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">mask address</td><td><input type="text" class="form-control" name="MASQ" value="1.1.1.1" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MAC</td><td><input type="text" class="form-control" name="MAC" value="08:00:27:13:6e:74" title="ZZ:ZZ:ZZ:ZZ:ZZ:ZZ"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="$width">MTU</td><td><input type="text" class="form-control" name="MTU" value="1200" title="1500"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">трансляция ARP</td><td><input type="checkbox" name="ARP_PROXY"><input type="hidden" name="ARP_PROXY" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">неразборчивый режим</td><td><input type="checkbox" name="PROMISC"><input type="hidden" name="PROMISC" value="off"></td>
+					</tr><tr bgcolor="" color="">
+						<td width="">отключено</td><td><input type="checkbox" name="DISABLE"><input type="hidden" name="DISABLE" value="off"></td>
+					</tr>
+				</tbody></table>
+			</font></td>
+			<td bgcolor="" width=""><font color="">
+					<button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="ACTION" value="Сохранить">Сохранить</button>
+			</font></td>
+			
+		</tr>
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+	</interface>
+</root>	
+	</root></td></tr></tbody></table>	
+	<div xmlns:foo="urn:foo" class="panel panel-default"><div class="panel-heading"><b>Шлюз</b></div><table width="100%" cellspacing="1" cellpadding="5">
+		<form name="" action="" method="POST" enctype=""></form>
+		<tbody><tr bgcolor="" color=""><td bgcolor="" width="10%"><font color="">
+		</font></td><td width="$width">IP адрес шлюза</td><td><input type="text" class="form-control" name="DEFAULT_GATEWAY" value="8.8.8.8" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+		
+		<td><button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="GW_ACTION" value="Сохранить">Сохранить</button></td>
+		<td bgcolor="" width="20%"><font color=""></font></td>
+		</tr>
+		
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+	<div xmlns:foo="urn:foo" class="panel panel-default"><div class="panel-heading"><b>DNS</b></div><table width="100%" cellspacing="1" cellpadding="5">
+		<form name="" action="" method="POST" enctype=""></form>
+		<tbody><tr bgcolor="" color=""><td bgcolor="" width="20%"><font color=""></font></td>
+		<td bgcolor="" width=""><font color="">
+		<table><tbody><tr bgcolor="" color="">
+		<td width="$width">Первичный DNS</td><td><input type="text" class="form-control" name="DNS1" value="9.9.9.9" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+		</tr><tr bgcolor="" color="">
+		<td width="$width">Вторичный DNS</td><td><input type="text" class="form-control" name="DNS2" value="" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+		</tr>
+		</tbody></table>
+		</font></td>
+		<td><button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="DNS_ACTION" value="Сохранить">Сохранить</button></td>
+		<td bgcolor="" width="20%"><font color=""></font></td>
+		</tr>
+		
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+	<div xmlns:foo="urn:foo" class="panel panel-default"><div align="center">
+			<form name="" action="" method="POST" enctype=""></form>
+			<div style="font-weight:bold;color:;">     Мост обеспечит прозрачное прохождение пакетов между указанным иинтерфейсами.</div><div style="color:;">
+			<div style="font-weight:bold;color:;">     Для создания моста необходимо не менее двух зелёных интерфейсов.</div><div style="color:;">
+			<div style="font-weight:bold;color:;">     В результате всех действий эти интерфейсы будут иметь общий IP-адрес.</div><div style="color:;">
+			<div style="font-weight:bold;color:red;">     Включение в мост административных интерфейсов невозможно.</div><div style="color:;">
+			
+			</div></div></div></div></div><table width="100%" cellspacing="1" cellpadding="5">
+		<tbody><tr bgcolor="" color=""><td bgcolor="" width="30%"><font color="">
+			</font></td><td width="$width">IP-адрес моста</td><td><input type="text" class="form-control" name="BRIDGE_IP" value="" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+			<td bgcolor="" width="30%"><font color=""></font></td></tr>
+			<tr bgcolor="" color=""><td bgcolor="" width=""><font color="">
+			</font></td><td width="$width">Маска сети</td><td><input type="text" class="form-control" name="BRIDGE_MASK" value="" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+			<td bgcolor="" width=""><font color=""></font></td></tr>
+			<tr bgcolor="" color=""><td bgcolor="" width=""><font color="">
+			</font></td><td width="$width">Широковещательный адрес</td><td><input type="text" class="form-control" name="BRIDGE_BCAST" value="" title="Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+"></td>
+			<td bgcolor="" width=""><font color=""></font></td></tr>
+			<tr bgcolor="" color=""><td bgcolor="" width=""><font color="">
+				</font></td><td><button type="submit" class="btn waves btn-primary text-uppercase waves-effect waves-float" name="BRIDGE_ACTION" value="Сохранить">Сохранить</button></td>
+			<td bgcolor="" width=""><font color=""></font></td></tr>
+			
+		
+	</tbody></table></div><hr xmlns:foo="urn:foo">
+
+		</td></tr></tbody></table></td>
+		<td>
+<!-- <img src='/images/null.gif' width='12' alt='' /> -->
+		</td></tr>
+		<tr><td><img src="/images/null.gif" width="18" height="18" alt=""></td>
+		<td colspan="3"><img src="/images/null.gif" width="1" height="18" alt=""></td>
+		<td><img src="/images/null.gif" width="18" height="18" alt=""></td></tr>
+<tr><td colspan="5"><img src="/images/null.gif" width="1" height="5" alt=""></td></tr>
+        </tbody></table>
+      <!--Footer-->
+      <div class="footer">
+АО "НПО "Эшелон"    </div>
+    
+
+    <!--Welcome notification-->
+    <div id="welcome"></div>
+
+    <!--Members Sidebar-->
+    <div id="members-sidebar" class="members-sidebar">
+      <h4 class="pull-left zero-m">Members</h4>
+      <span class="close-members-sidebar"><i class="fa fa-remove pull-right"></i></span>
+      <div class="clearfix"></div>
+      <ul class="nav">
+        <li>
+          <div class="messages">
+            <div class="member-info">
+              <img src="/i/img/team/admin.png" alt="admin" class="img-circle pull-left">
+              <span class="member-name">Sash Ficus</span>
+              <p class="members-message zero-m">Sushi time)))</p>
+            </div>
+            <div class="member-info">
+              <img src="/i/img/team/admin.png" alt="admin" class="img-circle pull-left">
+              <span class="member-name">Sash Ficus</span>
+              <p class="members-message zero-m">Working hard</p>
+            </div>
+          </div>
+        </li>
+        <li class="members-group">Work</li>
+        <li><span class="status online"></span>Sash Ficus</li>
+        <li><span class="status online"></span>Sash Ficus</li>
+        <li><span class="status not-available"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li class="members-group">Partner</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+        <li><span class="status"></span>Sash Ficus</li>
+      </ul>
+    </div>
+
+  
+
+    <div class="login-modal modal fade">
+      <div class="table-wrapper">
+        <div class="table-row">
+          <div class="table-cell text-center">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="login i-block">
+              <div class="content-box">
+                <div class="light-blue-bg biggest-box">
+
+                  <h1 class="zero-m text-uppercase">Welcome</h1>
+
+                </div>
+                <div class="big-box text-left login-form">
+                  <h4 class="text-center">Login</h4>
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control material" id="login" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control material" id="password" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-info text-uppercase waves waves-effect waves-float">Login</button>
+
+                  </form>
+                  <a href="/i/#" class="green i-block">Forgot password?</a>
+                  <p>Do not have an account?</p>
+                  <a class="btn btn-block btn-warning text-uppercase waves waves-button waves-effect waves-float">Create an account</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="logout-modal modal fade">
+      <div class="table-wrapper">
+        <div class="table-row">
+          <div class="table-cell text-center">
+            <div class="login i-block">
+              <div class="content-box">
+                <div class="light-blue-bg biggest-box">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h3 class="zero-m text-uppercase">Do you want to exit?</h3>
+                  <a href="/i/#" class="i-block" data-dismiss="modal">Yes</a>
+                  <a href="/i/#" class="i-block" data-dismiss="modal">No</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+    <!--Scripts-->
+  <script src="/i/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/i/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/i/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/i/bower_components/Waves/dist/waves.min.js"></script>
+  <script src="/i/bower_components/moment/min/moment-with-locales.min.js"></script>
+  <script src="/i/bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="/i/bower_components/slimScroll/jquery.slimscroll.min.js"></script>
+  <script src="/i/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+  <script src="/i/bower_components/cta/dist/cta.min.js"></script>
+  
+  <!--Menu-->
+  <script src="/i/js/menu/classie.js"></script>
+  <script src="/i/js/menu/gnmenu.js"></script>
+
+  <!--Selects-->
+  <script src="/i/js/selects/selectFx.js"></script>
+
+  <!--Flot-->
+  <script src="/i/bower_components/flot/jquery.flot.js"></script>
+  <script src="/i/bower_components/flot/jquery.flot.resize.js"></script>
+  <script src="/i/bower_components/flot.curvedlines/curvedLines.js"></script>
+  <script src="/i/js/flot/jquery.flot.orderBars.js"></script>
+
+  <!--Custom Flot Charts-->
+  <script src="/i/js/flot/line-chart-1.js"></script>
+  <script src="/i/js/flot/line-chart-2.js"></script>
+  <script src="/i/js/flot/line-chart-3.js"></script>
+  <script src="/i/js/flot/bar-chart.js"></script>
+
+  <!--C3.js-->
+  <script src="/i/bower_components/d3/d3.min.js"></script>
+<!--  <script src="/i/bower_components/c3/c3.min.js"></script> -->
+
+  <!--EasyPieChart-->
+  <script src="/i/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+  <!--Zabuto Calendar-->
+  <script src="/i/bower_components/zabuto_calendar/zabuto_calendar.min.js"></script>
+
+  <!--Simple Weather-->
+  <script src="/i/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+
+  <!--Notification-->
+  <script src="/i/js/notifications/notificationFx.js"></script>
+
+    <!--Custom Scripts-->
+  <script src="/i/js/common.js"></script>
+
+
+
+  <script>
+    $(function () {
+
+      // show the notification
+/*      setTimeout(function () {
+        // create the notification
+        var notification = new NotificationFx({
+          message: '<span>Welcome back, John!</span>',
+          layout: 'attached',
+          effect: 'bouncyflip',
+          ttl: 4000,
+          wrapper: document.getElementById("welcome"),
+          type: 'notice', // notice, warning, success or error
+        });
+        notification.show();
+      }, 1200);
+*/
+      /*c3.js*/
+      var chart = c3.generate({
+        bindto: '#reg-history',
+        size: {
+          height: 90
+        },
+        data: {
+          columns: [
+            ['New users', 30, 35, 45, 33, 48, 54, 41, 66, 49, 43, 38, 46]
+          ]
+        },
+        legend: {
+          show: false
+        },
+        color: {
+          pattern: ['#fff']
+        },
+        point: {
+          r: 3
+        },
+        axis: {
+          x: {
+            show: false
+          },
+          y: {
+            show: false
+          }
+        }
+      });
+      //EasyPieChart
+      $('.easypiechart').easyPieChart({
+        lineCap: 'square',
+        trackColor: '#cccccc',
+        barColor: '#42b382',
+        lineWidth: 5,
+        scaleLength: 0
+      });
+
+      //Zabuto Calendar
+      $("#calendar-widget").zabuto_calendar({
+        language: "en",
+        cell_border: false,
+        today: true,
+        show_days: true,
+        nav_icon: {
+          prev: '<i class="fa fa-chevron-left"></i>',
+          next: '<i class="fa fa-chevron-right"></i>'
+        }
+      });
+
+		$(".todo ul").sortable();
+
+      //Simple Weather
+      /* Does your browser support geolocation? */
+      if ("geolocation" in navigator) {
+        $('#weather').show();
+      } else {
+        $('#weather').hide();
+      }
+
+
+      function geolocation() {
+        navigator.geolocation.getCurrentPosition(positionFound, positionNotFound)
+      }
+      geolocation();
+
+      function positionFound(position) {
+        loadWeather(position.coords.latitude + ',' + position.coords.longitude); //load weather using your lat/lng coordinates
+      }
+
+      function positionNotFound(error) {
+        $("#weather").html('<div class="big-box yellow">Permission to check your location is denied. To allow it go to your browser settings.</div>'); //showing warning message about browsers permissions
+      }
+
+
+      function loadWeather(location, woeid) {
+        $.simpleWeather({
+          location: location,
+          woeid: woeid,
+          unit: 'c',
+          success: function (weather) {
+            //Weather widget markup
+            html = '<div class="weather-container text-center"><h4 class="weather-city zero-m">Weather forecast in ' + weather.city + '</h4><div class="i-block big-box"><i class="block yellow icon-' + weather.forecast[0].code + '"></i>' + weather.forecast[0].day + ' / ' + weather.forecast[0].high + '&deg;C</div>';
+            html += '<div class="i-block big-box"><i class="block blue icon-' + weather.forecast[1].code + '"></i>' + weather.forecast[1].day + ' / ' + weather.forecast[1].high + '&deg;C</div>';
+            html += '<div class="i-block big-box"><i class="block red icon-' + weather.forecast[2].code + '"></i>' + weather.forecast[2].day + ' / ' + weather.forecast[2].high + '&deg;C</div></div>';
+
+
+            $("#weather").html(html);
+          },
+          error: function (error) {
+            $("#weather").html('<p>' + error + '</p>');
+          }
+        });
+      }
+
+      //Tooltips for Flot Charts
+      if ($(".flot-chart")[0]) {
+        $(".flot-chart").bind("plothover", function (event, pos, item) {
+          if (item) {
+          var x = item.datapoint[0].toFixed(2),
+            y = item.datapoint[1].toFixed(2);
+
+          $(".flot-tooltip").html(x + " of " + y)
+            .css({top: item.pageY+5, left: item.pageX+5})
+            .fadeIn(200);
+        } else {
+          $(".flot-tooltip").hide();
+        }
+        });
+
+        $("<div class='flot-tooltip'></div>").appendTo("body");
+      }
+    });
+  </script>
+
+
+
+
+
+
+</td></tr></tbody></table></div></div><div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="padding-top: 56px; width: 7px; z-index: auto; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; touch-action: none; display: block; opacity: 0;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 5px; height: 480px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; touch-action: none;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 7px; z-index: auto; position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0;"><div class="nicescroll-cursors" style="position: absolute; top: 0px; height: 5px; width: 1039px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div></body></html>

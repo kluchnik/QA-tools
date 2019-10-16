@@ -1,0 +1,45 @@
+{
+  "name": "ip-адрес",
+  "description": "Проверка задания IP-адреса в Система => Интерфейсы (/cgi-bin/sysifaces.cgi)",
+  "timeout": 10,
+  "timeout_start": 300,
+  "get": {
+    "sysifaces": {
+      "name": "Интерфейсы",
+      "description": "Система => Интерфейсы",
+      "urn": "/cgi-bin/sysifaces.cgi"
+    },
+    "netstatus": {
+      "name": "Состояние сети",
+      "description": "Состояние => Состояние сети",
+      "urn": "/cgi-bin/netstatus.cgi"
+    }
+  },
+  "post": {
+    "sysifaces_interfaces": {
+      "name": "Параметры интерфейса",
+      "description": "Система => Интерфейсы => Сохранить настройки интерфейса",
+      "urn": "/cgi-bin/sysifaces.cgi",
+      "data": {
+        "COLOR": "GREEN",
+        "NUMBER": "3",
+        "ADDRESS": "192.168.3.1",
+        "NETMASK": "255.255.255.0",
+        "MAC": "08:00:27:7a:30:63",
+        "MTU": "1500",
+        "ARP_PROXY": "off",
+        "PROMISC": "off",
+        "DISABLE": "off",
+        "ACTION": "Сохранить"
+      }
+    },
+    "reboot": {
+      "name": "Перезагрузить",
+      "description": "Система => Выключение => Перезагрузить",
+      "urn": "/cgi-bin/shutdown.cgi",
+      "data": {
+        "ACTION": "Перезагрузить"
+      }
+    }
+  }
+}

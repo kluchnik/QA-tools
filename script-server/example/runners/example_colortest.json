@@ -1,0 +1,5 @@
+{
+  "name": "example: Цветовой вывод",
+  "description": "Цветовой вывод в консоли. \n Bash-скрипт.",
+  "script_path": "./conf/scripts/example/colortest.sh"
+}

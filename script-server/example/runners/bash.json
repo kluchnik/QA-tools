@@ -1,0 +1,5 @@
+{
+  "name": "BASH",
+  "script_path": "./conf/scripts/bash.sh",
+  "description": "Оболочка Bash"
+}

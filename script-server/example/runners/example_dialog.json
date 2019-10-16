@@ -1,0 +1,7 @@
+{
+  "name": "example: Диалог",
+  "script_path": "./conf/scripts/example/dialog.py",
+  "description": "Тестовый пример диалога. \n Python-скрипт. \n This is a very dangerous script, please be careful when running. Don't forget your protective helmet.",
+  "requires_terminal": true
+}
+

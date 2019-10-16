@@ -1,0 +1,21 @@
+{
+  "name": "Помощь",
+  "description": "Инструкция по работе с данным сервером",
+  "script_path": "help.sh",
+  "working_directory": "./conf/scripts/help/",
+  "parameters": [
+  {
+      "name": "Выберити информацию",
+      "description": "Запрос информации о стенде",
+      "type": "list",
+      "param": "--list",
+      "values": [
+        "Сетевая архитектура",
+        "Учетные записи",
+	"Архитектура Script Server",
+        "Конфигурирование запуска скриптов"
+      ]
+  }
+  ]
+}
+

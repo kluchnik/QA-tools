@@ -1,0 +1,6 @@
+{
+  "name": "example: Progress bar",
+  "script_path": "./conf/scripts/example/progress_bar.py",
+  "description": "Тестовый пример progress bar. \n Python-скрипт."
+}
+

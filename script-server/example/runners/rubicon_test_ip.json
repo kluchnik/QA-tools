@@ -1,0 +1,33 @@
+{
+  "name": "rubicon: Проверка назначения IP-адреса",
+  "script_path": "start.py",
+  "description": "Проверка назначения разных IP-адресов Рубикону",
+  "working_directory": "./conf/scripts/rubicon/t1/",
+  "parameters": [
+    {
+      "name": "Протокол",
+      "param": "--protocol",
+      "default": "https"
+    },
+    {
+      "name": "IP Рубикон",
+      "param": "--host",
+      "default": "192.168.2.1"
+    },
+    {
+      "name": "Порт",
+      "param": "--port",
+      "default": "8443"
+    },
+    {
+      "name": "Логин",
+      "param": "--login",
+      "default": "admin"
+    },
+    {
+      "name": "Пароль",
+      "param": "--passwd",
+      "default": "radmin"
+    }
+  ]
+}

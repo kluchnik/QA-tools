@@ -1,0 +1,8 @@
+Script Server
+
+Основной каталог: /home/script-server/
+Сценарий запуска через веб-интерфейс: ./conf/runners/
+Скрипты: ./conf/scripts/
+Cкрипты Рубикон: ./conf/scripts/rubicon/
+Отчеты: ./conf/log/
+Скриншоты: ./conf/screenshot/

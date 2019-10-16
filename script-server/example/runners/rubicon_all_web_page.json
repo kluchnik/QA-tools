@@ -1,0 +1,37 @@
+{
+  "name": "rubicon: Проверка наличия страниц",
+  "script_path": "all_web_page.py",
+  "description": "Проверка наличие всех страниц в Рубикон",
+  "working_directory": "./conf/scripts/rubicon/all_web_page",
+  "parameters": [
+    {
+      "name": "Протокол",
+      "param": "",
+      "default": "https"
+    },
+    {
+      "name": "IP-адрес Рубикон",
+      "param": "",
+      "default": "192.168.2.1"
+    },
+    {
+      "name": "Порт",
+      "param": "",
+      "default": "8443"
+    },
+    {
+        "name": "Страницы",
+      "param": "",
+      "type": "server_file",
+      "file_dir": "..",
+      "file_recursive": true,
+      "file_extensions": [
+        ".json"],
+      "secure": true,
+      "default": [
+        "all_web_page",
+        "all_web_page.json"
+      ]
+    }
+  ]
+}

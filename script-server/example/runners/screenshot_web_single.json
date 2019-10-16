@@ -1,0 +1,40 @@
+{
+  "name": "screenshot: Одна web-страница",
+  "script_path": "screenshot/screenshot_web_single.py",
+  "description": "Снятие screenshot страницы",
+  "working_directory": "./conf/scripts/",
+  "parameters": [
+    {
+      "name": "url",
+      "param": "",
+      "default": "https://"
+    },
+    {
+      "name": "Ширина",
+      "param": "",
+      "default": "1920"
+    },
+    {
+      "name": "Высота",
+      "param": "",
+      "default": "1080"
+    },
+    {
+      "name": "Ожидание загрузки",
+      "param": "",
+      "default": "10"
+    },
+    {
+        "name": "Сохранить",
+      "param": "",
+      "type": "server_file",
+      "file_dir": "..",
+      "file_recursive": true,
+      "secure": true,
+      "default": [
+        "screenshot",
+        "tmp"
+      ]
+    }
+  ]
+}

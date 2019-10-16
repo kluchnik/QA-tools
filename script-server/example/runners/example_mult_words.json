@@ -1,0 +1,18 @@
+{
+  "name": "example: Передача параметров",
+  "script_path": "'mult_words.py' 1 'word 2' '' 'word4'",
+  "description": "Тестовый пример запуска скрипта с передачей в него параметров: 1 'word 2' '' 'word4' '-p1' 'Параметр-1' '-p2' 'Параметр-2', который печатает данные параметры. \n Python-скрипт.",
+  "working_directory": "./conf/scripts/example",
+  "parameters": [
+    {
+      "name": "Параметр-1",
+      "param": "-p1",
+      "default": "10"
+    },
+    {
+      "name": "Параметр-2",
+      "param": "-p2",
+      "default": "a single parameter"
+    }
+  ]
+}
